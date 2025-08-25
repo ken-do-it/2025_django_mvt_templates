@@ -1,9 +1,16 @@
 {% extends 'polls/base.html' %}
 
+
+
 {% block title %}페이지 1{% endblock %}
 
+
 {% block content %}
+
+{% include 'polls/body_1.html' %}
+
   <div class="django_go"><h1>this is {{name}}</h1></div>
+
 
   {% if memos %}
       {% for memo in memos %}

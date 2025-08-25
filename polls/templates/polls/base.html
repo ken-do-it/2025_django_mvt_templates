@@ -1,0 +1,15 @@
+<!-- base.html - 공통 레이아웃 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}기본 제목{% endblock %}</title>
+    <style>
+        body { font-family: Arial; }
+    </style>
+</head>
+<body>
+    <nav>메뉴</nav>
+    {% block content %}{% endblock %}
+    <footer>Copyright 2024</footer>
+</body>
+</html>
